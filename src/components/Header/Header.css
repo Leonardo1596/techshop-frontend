@@ -1,0 +1,103 @@
+.Header-component {
+    /* background: rgb(11, 11, 46); */
+    background: #141414;
+    color: white;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.Header-component .container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.Header-component .container-header .left-side{
+    display: flex;
+    align-items: center;
+}
+
+.Header-component .container-header .left-side .logo {
+    margin-right: 40px;
+}
+
+.Header-component .container-header .left-side .logo h2 {
+    margin-bottom: 0;
+}
+
+.Header-component .container-header .left-side .logo a:hover {
+    color: white;
+}
+
+.Header-component .container-header .left-side .logo span {
+    color: rgb(255, 94, 0);
+}
+
+.Header-component .container-header .left-side .nav-icons {
+    display: none;
+}
+
+.Header-component .container-header .left-side .nav-icons .icon:hover {
+    color: white;
+}
+
+.Header-component .container-header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Header-component .container-header a:hover {
+    color: rgb(255, 94, 0);
+}
+
+.Header-component .container-header nav {
+    display: flex;
+    align-items: center;
+}
+
+.Header-component .container-header nav span {
+    margin-right: 10px;
+}
+
+.Header-component .container-header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.Header-component .container-header .header-right span {
+    margin-left: 10px;
+}
+
+.Header-component .container-header .header-right .cart {
+    position: relative;
+}
+
+.Header-component .container-header .header-right .cart p {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.Header-component .container-header .header-right .cart .cart-icon {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.Header-component .container-header .header-right .links {
+    display: flex;
+}
+
+.Header-component .container-header .menu-icon .hamburger-icon {
+    display: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.Header-component .container-header .active {
+    /* text-decoration: underline; */
+    color: rgb(255, 94, 0);
+    border-bottom: 2px solid white;
+}

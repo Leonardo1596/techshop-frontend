@@ -1,25 +1,48 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Home from './pages/home/Home';
+import Favoritos from './pages/favourites/Favourites';
+import Login from './pages/auth/Login/Login';
+import Register from './pages/auth/Register/Register';
+import Reset from './pages/auth/Reset/Reset';
+import Cart from './pages/cart/Cart';
+import { Provider } from 'react-redux';
+import store, { persistor } from './redux/store';
+import Product from './pages/product/Product';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
-function App() {
+import { PersistGate } from 'redux-persist/integration/react';
+
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Provider store={store}>
+      <PersistGate persistor={persistor}>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/favoritos' element={
+              <PrivateRoute login='login'>
+                <Favoritos />
+              </PrivateRoute>
+            }
+            />
+            <Route path='/login' element={<Login />} />
+            <Route path='/cadastro' element={<Register />} />
+            <Route path='/recuperar-senha' element={<Reset />} />
+            <Route path='/carrinho' element={<Cart />} />
+            <Route path='/produtos/:id' element={<Product />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </PersistGate>
+    </Provider>
+  )
 }
 
-export default App;
+export default App

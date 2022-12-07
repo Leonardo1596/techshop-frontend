@@ -1,0 +1,44 @@
+.Reset-component .container-reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 82vh;
+}
+
+.Reset-component .container-reset .resetBox {
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 50px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 10px 10px 20px #888888;
+}
+
+.Reset-component .container-reset .resetBox h2 {
+    color: rgb(255, 94, 0);
+}
+
+.Reset-component  .container-reset .resetBox .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Reset-component  .container-reset .resetBox .form input {
+    height: 40px;
+    border: 1px solid rgba(158, 146, 146, 0.517);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+
+.Reset-component .container-reset .resetBox .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Reset-component .container-reset .resetBox .btn-google {
+    background: rgb(255, 94, 0);
+    color: white;
+    width: 100%;
+}

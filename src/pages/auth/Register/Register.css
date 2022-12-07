@@ -1,0 +1,38 @@
+.Register-component .container-register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 82vh;
+}
+
+.Register-component .container-register .registerBox {
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 50px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 10px 10px 20px #888888;
+}
+
+.Register-component .container-register .registerBox h2 {
+    color: rgb(255, 94, 0);
+}
+
+.Register-component  .container-register .registerBox .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Register-component  .container-register .registerBox .form input {
+    height: 40px;
+    border: 1px solid rgba(158, 146, 146, 0.517);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+
+.Register-component .container-register .registerBox .btn-google {
+    background: rgb(255, 94, 0);
+    color: white;
+    width: 100%;
+}

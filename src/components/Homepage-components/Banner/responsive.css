@@ -1,0 +1,11 @@
+@media (max-width: 830px) {
+    .container-banner img {
+        height: 35vw;
+    }
+}
+
+@media (max-width: 549px) {
+    .container-banner img {
+        height: 45vw;
+    }
+}

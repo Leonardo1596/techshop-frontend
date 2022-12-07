@@ -1,0 +1,15 @@
+.Footer-component {
+    /* background: rgb(11, 11, 46); */
+    background: #141414;
+    color: white;
+    height: 66px;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer-component .container-footer {
+    
+}

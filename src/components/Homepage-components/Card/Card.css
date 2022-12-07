@@ -1,0 +1,68 @@
+.Card-component {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.Card-component a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.Card-component a:hover {
+    color: inherit;
+}
+
+.container-card .card {
+    border: none;
+    /* width: 18rem; */
+    width: 270px;
+}
+
+.container-card .card .card-img-top {
+    filter: brightness(70%);
+}
+
+.container-card .card .card-img-top:hover {
+    filter: brightness(100%);
+}
+
+.container-card h5 {
+    height: 48px;
+    font-size: 17px;
+}
+
+.container-card .card .card-body {
+    background: rgb(51, 51, 51);
+    color: white;
+}
+
+.container-card .card .card-body .card-price {
+    color: #00a000;
+    font-size: 20px;
+}
+
+.container-card .card .card-body .card-price2 {
+    font-size: 15px;
+}
+
+.container-card .btn {
+    margin-top: 5px;
+    background: rgb(255, 94, 0);
+    color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    display: block;
+}
+
+.container-card .btn:hover {
+    background: rgb(255, 94, 0);
+    color: black;
+}

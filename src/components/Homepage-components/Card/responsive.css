@@ -1,0 +1,28 @@
+@media (max-width: 585px) {
+    .Card-component {
+        /* margin-right: 0; */
+    }
+
+    .container-card .card .card-img-top {
+        filter: brightness(100%);
+    }
+
+    .container-card h5 {
+        height: auto;
+        font-size: 15px;
+    }
+
+    .container-card .card .card-body .card-price {
+        font-size: 18px;
+    }
+
+    .container-card .card .card-body .card-price2 {
+        font-size: 13px;
+    }
+
+    .container-card .btn {
+        font-size: 14px;
+    }
+    
+
+}

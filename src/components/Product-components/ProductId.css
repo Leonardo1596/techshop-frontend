@@ -1,0 +1,18 @@
+.container-productId {
+    display: flex;
+    justify-content: center;
+    padding: 50px 200px;
+    color: white;
+}
+
+.container-productId .image {
+    margin-right: 30px;;
+}
+
+.container-productId .image img {
+    width: 750px;
+}
+
+.container-productId .info {
+    padding-top: 20px;
+}

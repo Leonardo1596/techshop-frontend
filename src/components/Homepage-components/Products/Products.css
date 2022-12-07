@@ -1,0 +1,47 @@
+.container-products {
+    margin-top: 30px;
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-products .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-products .cards .title {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.container-products .cards .title .btn {
+    color: white;
+    border-color: rgb(112, 112, 112);
+    margin-right: 15px;
+    min-width: 120px;
+    font-size: 18px;
+}
+
+.container-products .cards .title .btn:hover, .container-products .cards .title .btn:focus{
+    background: transparent;
+}
+
+.container-products .cards .title .btn:active {
+    background: rgb(255, 94, 0);
+}
+
+.container-products .cards .container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 20px;
+}

@@ -1,0 +1,27 @@
+@media (max-width: 890px) {
+    .Header-component .container-header .header-right .links {
+        display: none;
+    }
+
+    .Header-component .container-header .menu-icon .hamburger-icon {
+        display: inline;
+    }
+}
+
+@media (max-width: 630px) {
+    .Header-component .container-header {
+        height: 70px;
+    }
+
+    .Header-component .container-header .left-side nav {
+        display: none;
+    }
+
+    .Header-component .container-header .left-side .nav-icons {
+        display: block;
+    }
+
+    .Header-component .container-header .header-right .menu-icon .cart-label {
+        display: none;
+    }
+}
