@@ -14,7 +14,7 @@ const Products = () => {
 
     useEffect(() => {
         function getProducts() {
-            axios.get('http://10.147.17.182:8000/products')
+            axios.get('https://10.147.17.182:8000/products')
                 .then(response => {
                     // console.log(response.data.products);
                     setProducts(response.data.products);
