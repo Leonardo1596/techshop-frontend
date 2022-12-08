@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Product.css';
 import './responsive.css';
 import { useDispatch } from 'react-redux';
 import { delCart, reduceTotal } from '../../../redux/action';
-// import { useSelector } from 'react-redux';
 
 
 const Product = ({ product }) => {
     const dispatch = useDispatch();
-    // const products = useSelector((state) => state.handleCart);
     // console.log(product);
 
     function removeFromCart(product) {

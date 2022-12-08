@@ -1,7 +1,6 @@
 import React from 'react';
 import Banner from '../../components/Homepage-components/Banner/Banner';
 import Products from '../../components/Homepage-components/Products/Products';
-import Header from '../../components/Header/Header';
 import './Home.css';
 
 
