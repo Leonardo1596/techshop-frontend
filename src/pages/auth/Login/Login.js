@@ -21,7 +21,8 @@ const Login = () => {
       password: password
     };
 
-    axios.post('http://10.147.17.182:8000/auth/sign-in', body)
+    // axios.post('http://10.147.17.182:8000/auth/sign-in', body)
+    axios.post('https://techshop-backend.onrender.com/auth/sign-in', body)
       .then(response => {
         console.log(response.data);
         if (response.data.message === 'Successfully signed') {

@@ -14,7 +14,8 @@ const Products = () => {
 
     useEffect(() => {
         function getProducts() {
-            axios.get('https://10.147.17.182:8000/products')
+            // axios.get('http://10.147.17.182:8000/products')
+            axios.get('https://techshop-backend.onrender.com/products')
                 .then(response => {
                     // console.log(response.data.products);
                     setProducts(response.data.products);

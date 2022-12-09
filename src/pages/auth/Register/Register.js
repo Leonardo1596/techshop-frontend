@@ -20,7 +20,8 @@ const Register = () => {
       confirmPassword: confirmPassword
     };
 
-    axios.post('http://10.147.17.182:8000/auth/sign-up', body)
+    // axios.post('http://10.147.17.182:8000/auth/sign-up', body)
+    axios.post('https://techshop-backend.onrender.com/auth/sign-up', body)
       .then(response => {
         console.log(response);
         if (response.data.message === 'Successfully registered') {

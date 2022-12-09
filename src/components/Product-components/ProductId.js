@@ -14,7 +14,8 @@ const ProductId = () => {
 
     useEffect(() => {
         function getProduct() {
-            axios.get(`http://10.147.17.182:8000/products/${id}`)
+            // axios.get(`http://10.147.17.182:8000/products/${id}`)
+            axios.get(`https://techshop-backend.onrender.com/products/${id}`)
                 .then(response => {
                     // console.log(response.data.founded);
                     setProduct(response.data.founded);
@@ -30,7 +31,7 @@ const ProductId = () => {
     return (
         <div className='container-productId'>
             <div className='image'>
-                <img src={`http://10.147.17.182:8000/img/${product.image}`} />
+                <img src={`https://techshop-backend.onrender.com/img/${product.image}`} />
             </div>
             <div className='info'>
                 <h2>{product.title}</h2>

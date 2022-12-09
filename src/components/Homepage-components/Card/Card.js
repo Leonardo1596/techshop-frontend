@@ -19,7 +19,8 @@ const Card = ({ product }) => {
         <div className='Card-component'>
             <div className='container-card'>
                 <div className="card">
-                    <Link to={`/produtos/${product._id}`}><img src={`http://10.147.17.182:8000/img/${product.image}`} className="card-img-top" alt={product.title} draggable={false} /></Link>
+                    {/* <Link to={`/produtos/${product._id}`}><img src={`http://10.147.17.182:8000/img/${product.image}`} className="card-img-top" alt={product.title} draggable={false} /></Link> */}
+                    <Link to={`/produtos/${product._id}`}><img src={`https://techshop-backend.onrender.com/img/${product.image}`} className="card-img-top" alt={product.title} draggable={false} /></Link>
                     <div className="card-body">
                         <Link to={`/produtos/${product._id}`}><h5 className="card-title">{product.title.length > 35 ? product.title.substring(0, 35) + '...' : product.title}</h5></Link>
                         <p className='card-price'>{`R$ ${parseFloat(product.price - product.price * 15 / 100).toFixed(2)} à vista`}</p>
