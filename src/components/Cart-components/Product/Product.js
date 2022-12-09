@@ -22,7 +22,7 @@ const Product = ({ product }) => {
                 </div>
                 <div className='product'>
                     <div className='image'>
-                        <img src={`http://10.147.17.182:8000/img/${product.image}`} alt={product.title} />
+                        <img src={`https://techshop-backend.onrender.com/img/${product.image}`} alt={product.title} />
                     </div>
                     <div className='informations'>
                         <div className='info'>
